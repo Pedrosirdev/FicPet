@@ -1,6 +1,9 @@
 body {
   background-color: #f00;
-  color: rgb(219, 205, 205);
+}
+
+#navbar {
+  color: rgb(9, 214, 221);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,8 +1,10 @@
+import Navbar from "./components/navbar/navbar"
+
 
 function App() {
   return (
       <>
-        <h1>FicPet</h1>
+        <Navbar />
       </>
   )
 }
