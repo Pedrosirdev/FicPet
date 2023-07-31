@@ -1,84 +1,66 @@
-#x-small, #small, #medium, #large, #x-large, #xx-large {
+// #info-screen{
+//   display: none !important;
+// }
+
+#x-small, #small, #medium, #large, #x-large, #xx-large{
   position: fixed;
   background: red;
   padding: 2px;
   font-weight: bold;
-}
+}          
 
-/*media queries*/
+									/*media queries*/
 /* X-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  #x-small {
+  #x-small{
     display: visible;
   }
-  #small, #medium, #large, #x-large, #xx-large {
+  #small, #medium, #large, #x-large, #xx-large{
     display: none;
   }
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-  #small {
+  #small{
     display: visible;
   }
-  #x-small, #medium, #large, #x-large, #xx-large {
+  #x-small, #medium, #large, #x-large, #xx-large{
     display: none;
   }
 }
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-  #medium {
+  #medium{
     display: block;
   }
-  #x-small, #small, #large, #x-large, #xx-large {
+  #x-small, #small, #large, #x-large, #xx-large{
     display: none;
   }
 }
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-  #large {
+  #large{
     display: block;
   }
-  #x-small, #small, #medium, #x-large, #xx-large {
+  #x-small, #small, #medium , #x-large, #xx-large{
     display: none;
   }
 }
 /*X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-  #x-large {
+  #x-large{
     display: block;
   }
-  #x-small, #small, #medium, #large, #xx-large {
+  #x-small, #small, #medium , #large , #xx-large{
     display: none;
   }
 }
 /*XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) {
-  #xx-large {
+  #xx-large{
     display: block;
   }
-  #x-small, #small, #medium, #large, #x-large {
+  #x-small, #small, #medium , #large , #x-large {
     display: none;
   }
 }
-#navbar {
-  background-color: #032940;
-}
-
-.div-logo {
-  border: 1px solid red;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  background-color: #F2A20C;
-}
-
-#navbar {
-  color: rgb(255, 255, 255);
-}
-
-/*# sourceMappingURL=style.css.map */
