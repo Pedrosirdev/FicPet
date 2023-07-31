@@ -2,8 +2,8 @@
 
 export default function Section() {
   return (
-    <nav className="navbar navbar-">
+    <section>
       
-    </nav>
+    </section>
   )
 }
