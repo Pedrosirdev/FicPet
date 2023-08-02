@@ -1,7 +1,7 @@
 export default function ImgDog(){
   return (
     <div>
-      <h1>aaaaaaaa</h1>
+      <h1>foto dog</h1>
     </div>
   )
 }
