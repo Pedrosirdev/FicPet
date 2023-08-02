@@ -4,6 +4,7 @@
 
 #x-small, #small, #medium, #large, #x-large, #xx-large{
   position: fixed;
+  z-index: 100;
   background: red;
   padding: 2px;
   font-weight: bold;

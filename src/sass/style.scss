@@ -1,23 +1,15 @@
+@use "variables";
+
 @import './media.scss';
 @import './navbar.scss';
 
-@import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Boogaloo&family=Quintessential&family=Readex+Pro&display=swap');
-
-// Paleta
-$main-color: #F2A20C;
-$secondary-color: #032940;
-$tertiary-color: #BF6C06;
-
-//Fonts
-$normal-text: 'Average Sans', sans-serif;
-$title-font: 'Boogaloo', cursive;
 
 * {
   padding: 0;
   margin: 0;
 }
 body{
-  background-color: $main-color;
+  background-color: variables.$main-color;
 }
 #navbar{
   color: rgb(255, 255, 255);

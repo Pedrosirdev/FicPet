@@ -1,33 +1,30 @@
-// Paleta
-$main-color: #F2A20C;
-$secondary-color: #032940;
-$tertiary-color: #BF6C06;
+@use "variables";
 
-//Fonts
-$normal-text: 'Average Sans', sans-serif;
-$title-font: 'Boogaloo', cursive;
-
-.translate{
-  translate: 200% 100%;
+.off-canvas-active{
+  top: 100% !important;
+  right: -100% !important;
   transition: all 500ms;
 }
 
 #navbar{
   display: flex;
   justify-content: space-between;
-  background-color: $secondary-color;
+  background-color: variables.$secondary-color;
   padding: 1em 4% ;
-  color: aliceblue;
+  color: #f0f8ff;
   a{
-    color: aliceblue;
+    color: #f0f8ff;
     text-decoration: none;
+    transition: all 500ms;
+  }
+  a:hover{
+    color: variables.$main-color;
   }
   div{
     width:40%;
   }
 }
 .div-logo{
-  border: 1px solid red;
   img{
     width: 170px;
     height: 80px;
@@ -36,54 +33,63 @@ $title-font: 'Boogaloo', cursive;
 #menu{
   width: 20% !important;
   cursor: pointer;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 0.25em;
 
-  span{
-    transition: all 300ms
-    cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    display: flex;
-    width: 2.5em;
-    padding: 0.10em;
-    border-radius: 30px;
-    background-color: #fff;
-  }
-  span:nth-child(2){
-    width: 1.5em;
-  }
+.bar-off{
+  transition: all 300ms
+  cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  width: 2.5em;
+  padding: 0.10em;
+  border-radius: 30px;
+  background-color: #fff;
 }
-.bar:nth-child(1),
-#menu:focus, .bar:nth-child(1){
+.bar-off:nth-child(2){
+  width: 1.5em;
+}
+}
+.bar:nth-child(1){
   transform: rotate(40deg) translate(0px, 10px);
 }
-.bar:nth-child(2),
-#menu:focus, .bar:nth-child(2){
+.bar:nth-child(2){
   visibility: hidden;
 }
-.bar:nth-child(3),
-#menu:focus, .bar:nth-child(3){
+.bar:nth-child(3){
   transform: rotate(-40deg) translate(0px, -10px);
 }
 
             /*media queries*/
 /* X-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  #navbar{
+    height: 4em;
+    position: relative;
+    a:hover{
+      translate: -1em;
+    }
+  }
   .div-links-navbar{
-    // display: none;
-    font-family: $normal-text;
+    position: absolute;
+    top: 100%;
+    right: -0%;
+    transition: all 500ms;
+    padding-right: 2em;
+    width: 60% !important;
+    height: 100vh;
+    font-family: variables.$normal-text;
     font-size: 1.25em;
     display: flex;
+    flex-direction: column;
     gap: 2em;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid red;
+    justify-content: start;
+    align-items: flex-end;
+    background-color: variables.$secondary-color;
   }
   .div-logo{
-    border: 1px solid red;
     img{
       width: 100px;
       height: 48px;
@@ -93,10 +99,31 @@ $title-font: 'Boogaloo', cursive;
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
   .div-links-navbar{
-    // display: none;
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    height: 100vh;
+    background-color: variables.$secondary-color;
+    padding-right: 2em;
+    transition: all 500ms;
+    font-family: variables.$normal-text;
+    font-size: 1.25em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: start;
+    align-items: flex-end;
   }
+
+    #navbar{
+      height: 4em;
+      position: relative;
+      a:hover{
+        translate: -1em;
+      }
+    }
   .div-logo{
-    border: 1px solid red;
+    height: 70px;
     img{
       width: 100px;
       height: 48px;
@@ -105,20 +132,23 @@ $title-font: 'Boogaloo', cursive;
 }
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+  #navbar{
+    height: 4em;
+    a:hover{
+      translate: -1em;
+    }
+  }
   .div-links-navbar{
-    // display: none;
-  transition: all 500ms;
-    font-family: $normal-text;
+    transition: all 500ms;
+    font-family: variables.$normal-text;
     font-size: 1.25em;
     display: flex;
     flex-direction: column;
-    gap: 1em;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(223, 201, 201);
+    gap: 2em;
+    justify-content: start;
+    align-items: flex-end;
   }
   .div-logo{
-    border: 1px solid red;
     img{
       width: 142px;
       height: 68px;
@@ -127,21 +157,35 @@ $title-font: 'Boogaloo', cursive;
 }
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+  #navbar{
+    height: 5em;
+
+    a:hover{
+      translate: 0em;
+    }
+  }
   .div-links-navbar{
-    // display: inherit;
-    font-family: $normal-text;
+    height: inherit;
+    position: inherit !important;
+    top: inherit !important;
+    right: inherit !important;
+    font-family: variables.$normal-text;
     font-size: 1.25em;
+    padding-right: 0;
     display: flex;
+    flex-direction: row;
     gap: 2em;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+  }
+  .translate{
+    translate: 0% 0%;
+    transition: all 500ms;
   }
   #menu{
     display: none;
   }
   .div-logo{
-    border: 1px solid red;
     img{
       width: 170px;
       height: 80px;

@@ -1,20 +1,20 @@
 export default function Menu(){
-  const bar = document.querySelectorAll('.bar')
-  const divLinksNavbar = document.querySelector('.div-links-navbar')
 
   function click(){
+    const bar = document.querySelectorAll('.bar-off')
     bar.forEach(classBar => {
       classBar.classList.toggle('bar')
     });
 
-    divLinksNavbar.classList.toggle('translate')
+    const divLinksNavbar = document.querySelector('.div-links-navbar')
+    divLinksNavbar.classList.toggle('off-canvas-active')
   }
 
   return (
     <div onClick={click} id="menu">
-    <span className=""></span>
-    <span className=""></span>
-    <span className=""></span>
+    <span className="bar-off"></span>
+    <span className="bar-off"></span>
+    <span className="bar-off"></span>
   </div>
   )
 }
