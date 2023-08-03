@@ -1,8 +1,8 @@
 function SubTitle(){
   return (
-    <h1>
-      SubTitulo
-    </h1>
+    <h4>
+      Oferecemos desde banho e tosa até o melhor tratamento veterinário e muito mais!
+    </h4>
   )
 }
 

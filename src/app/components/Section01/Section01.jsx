@@ -4,7 +4,7 @@ import ImgDog from "./ImgDog/ImgDog";
 
 export default function Section() {
   return (
-    <section>
+    <section id="section01">
       <ContPhraseButton />
       <ImgDog />
     </section>

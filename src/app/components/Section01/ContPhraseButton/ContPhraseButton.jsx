@@ -5,8 +5,8 @@ import Title from "../../shared/Title/Title";
 export default function ContPhraseButton(){
   return (
     <div>
-      <SubTitle />
       <Title />
+      <SubTitle />
       <DefaultButton />
     </div>
   )

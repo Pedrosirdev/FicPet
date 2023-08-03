@@ -1,9 +1,9 @@
 export default function DefaultButton(){
   return (
     <>
-      <button>
-        Contato
-      </button> 
+      <a href="" className="defaultBtn">
+        Agende uma visita!
+      </a> 
     </>
   )
 }

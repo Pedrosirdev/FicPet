@@ -2,6 +2,7 @@
 
 @import './media.scss';
 @import './navbar.scss';
+// @import './mediaQueries.scss';
 
 
 * {
@@ -11,6 +12,107 @@
 body{
   background-color: variables.$main-color;
 }
-#navbar{
-  color: rgb(255, 255, 255);
+#section01{
+  border: 1px solid #000;
+  height: 85vh;
+  padding: 0 4%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  div:nth-child(1){
+    // border: 1px solid red;
+    width: 50%;
+    height: 70vh;
+    color: variables.$color-light;
+    h1{
+      font-family: variables.$title-font;
+      font-size: 55px;
+      padding: 0.1em 0.1em 0.5em 0.1em;
+    }
+    h4{
+      font-family: variables.$normal-text;
+      padding: 0em 0em 2em 0.2em;
+      font-size: 25px;
+    }
+
+  }
+  div:nth-child(2){
+    // border: 1px solid rgb(161, 137, 137);
+    width: 50%;
+    height: 70vh;
+  }
+}
+.defaultBtn{
+  display: block;
+  background-color: variables.$tertiary-color;
+  color: variables.$color-light;
+  width: 8em;
+  padding: 0.5em;
+  border-radius: 30px;
+  font-family: variables.$normal-text;
+  border: 1px solid variables.$color-light;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: all 500ms;
+  text-decoration: none;
+
+}
+.defaultBtn:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+
+}
+
+/* X-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #section01{
+    div:nth-child(1){
+      width: 100%;
+    }
+    div:nth-child(2){
+      display: none;
+    }
+  }
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  #section01{
+    div:nth-child(1){
+      width: 100%;
+    }
+    div:nth-child(2){
+      display: none;
+    }
+  }
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  #section01{
+    div:nth-child(1){
+      width: 50%;
+    }
+    div:nth-child(2){
+      display: inherit;
+
+      img{
+        width: 409px;
+        height: 388px;
+        margin: 0 auto;
+        // object-fit: cover;
+      }
+    }
+  }
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  #section01{
+    div:nth-child(2){
+      width: 40%;
+      img{
+        width: 529px;
+        height: 508px;
+        margin: 0 auto;
+      }
+    }
+  }
 }

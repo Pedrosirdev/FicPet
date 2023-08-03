@@ -1,7 +1,7 @@
 function Title(){
   return (
     <h1>
-      Titulo
+      Cuide do seu pet conosco!
     </h1>
   )
 }

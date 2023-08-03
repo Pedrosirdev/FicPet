@@ -1,7 +1,9 @@
+import WhitePoodle from '../../../../assets/images/white-poodle.png'
+
 export default function ImgDog(){
   return (
     <div>
-      <h1>foto dog</h1>
+      <img width={520} height={508} src={WhitePoodle} alt="White Poodle" />
     </div>
   )
 }
