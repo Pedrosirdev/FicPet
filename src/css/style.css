@@ -70,6 +70,7 @@
 }
 
 #navbar {
+  margin-right: -10px;
   display: flex;
   justify-content: space-between;
   background-color: #032940;
@@ -166,7 +167,7 @@
     right: 0%;
     height: 100vh;
     background-color: #032940;
-    padding-right: 2em;
+    padding-right: 4em;
     transition: all 500ms;
     font-family: "Average Sans", sans-serif;
     font-size: 1.25em;
@@ -260,7 +261,6 @@ body {
 }
 
 #section01 {
-  border: 1px solid #000;
   height: 85vh;
   padding: 0 4%;
   display: flex;
@@ -287,11 +287,42 @@ body {
   height: 70vh;
 }
 
+#section02 {
+  background-image: url(../assets/images/section2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
+  padding: 0 4%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#section02 div:nth-child(2) {
+  width: 50%;
+  height: 70vh;
+  color: #f0f8ff;
+}
+#section02 div:nth-child(2) h1 {
+  font-family: "Boogaloo", cursive;
+  font-size: 55px;
+  padding: 0.1em 0.1em 0.5em 0.1em;
+}
+#section02 div:nth-child(2) h4 {
+  font-family: "Average Sans", sans-serif;
+  padding: 0em 0em 2em 0.2em;
+  font-size: 25px;
+}
+#section02 div:nth-child(1) {
+  width: 50%;
+  height: 70vh;
+}
+
 .defaultBtn {
+  text-align: center;
   display: block;
   background-color: #BF6C06;
   color: #f0f8ff;
-  width: 8em;
+  width: 9em;
   padding: 0.5em;
   border-radius: 30px;
   font-family: "Average Sans", sans-serif;
@@ -314,6 +345,21 @@ body {
   #section01 div:nth-child(2) {
     display: none;
   }
+  #section02 {
+    height: 852px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #section02 div:nth-child(2) {
+    width: 90%;
+  }
+  #section02 div:nth-child(1) {
+    width: 130%;
+    overflow: hidden;
+  }
+  #section02 div:nth-child(1) img {
+    object-fit: contain;
+  }
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
@@ -322,6 +368,16 @@ body {
   }
   #section01 div:nth-child(2) {
     display: none;
+  }
+  #section02 {
+    height: 852px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #section02 div:nth-child(2) {
+    position: absolute;
+    z-index: 2;
+    width: 90%;
   }
 }
 /*Medium devices (tablets, 768px and up)*/
@@ -340,6 +396,17 @@ body {
 }
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+  #section01 div:nth-child(2) {
+    width: 40%;
+  }
+  #section01 div:nth-child(2) img {
+    width: 451px;
+    height: 430px;
+    margin: 0 auto;
+  }
+}
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
   #section01 div:nth-child(2) {
     width: 40%;
   }

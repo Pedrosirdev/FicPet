@@ -13,7 +13,6 @@ body{
   background-color: variables.$main-color;
 }
 #section01{
-  border: 1px solid #000;
   height: 85vh;
   padding: 0 4%;
   display: flex;
@@ -21,7 +20,6 @@ body{
   align-items: center;
 
   div:nth-child(1){
-    // border: 1px solid red;
     width: 50%;
     height: 70vh;
     color: variables.$color-light;
@@ -38,16 +36,48 @@ body{
 
   }
   div:nth-child(2){
-    // border: 1px solid rgb(161, 137, 137);
+    width: 50%;
+    height: 70vh;
+  }
+}
+#section02{
+  // border: 1px solid red;
+  background-image: url(../assets/images/section2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
+  padding: 0 4%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  div:nth-child(2){
+    width: 50%;
+    height: 70vh;
+    color: variables.$color-light;
+    h1{
+      font-family: variables.$title-font;
+      font-size: 55px;
+      padding: 0.1em 0.1em 0.5em 0.1em;
+    }
+    h4{
+      font-family: variables.$normal-text;
+      padding: 0em 0em 2em 0.2em;
+      font-size: 25px;
+    }
+
+  }
+  div:nth-child(1){
     width: 50%;
     height: 70vh;
   }
 }
 .defaultBtn{
+  text-align: center;
   display: block;
   background-color: variables.$tertiary-color;
   color: variables.$color-light;
-  width: 8em;
+  width: 9em;
   padding: 0.5em;
   border-radius: 30px;
   font-family: variables.$normal-text;
@@ -60,7 +90,6 @@ body{
 .defaultBtn:hover{
   transform: scale(1.05);
   cursor: pointer;
-
 }
 
 /* X-small devices (portrait phones, less than 576px) */
@@ -73,6 +102,26 @@ body{
       display: none;
     }
   }
+  #section02{
+    height: 852px;
+    display: flex;
+    flex-direction: column-reverse;
+    div:nth-child(2){
+      // position: absolute;
+      // z-index: 2;
+      width: 90%;
+      // border: 1px solid #f00;
+    }
+    div:nth-child(1){
+      width: 130%;
+      // height: 500px;
+      overflow: hidden;
+      img{
+
+        object-fit: contain;
+      }
+    }
+  }
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
@@ -82,6 +131,22 @@ body{
     }
     div:nth-child(2){
       display: none;
+    }
+  }
+  #section02{
+    height: 852px;
+    display: flex;
+    flex-direction: column-reverse;
+    div:nth-child(2){
+      position: absolute;
+      z-index: 2;
+      width: 90%;
+      // border: 1px solid #f00;
+    }
+    div:nth-child(1){
+      img{
+        // border: 1px solid #fff;
+      }
     }
   }
 }
@@ -98,13 +163,25 @@ body{
         width: 409px;
         height: 388px;
         margin: 0 auto;
-        // object-fit: cover;
       }
     }
   }
 }
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+  #section01{
+    div:nth-child(2){
+      width: 40%;
+      img{
+        width: 451px;
+        height: 430px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
   #section01{
     div:nth-child(2){
       width: 40%;

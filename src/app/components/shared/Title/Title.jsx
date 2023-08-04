@@ -1,7 +1,8 @@
-function Title(){
+function Title(props){
   return (
     <h1>
-      Cuide do seu pet conosco!
+      {props.title}
+      
     </h1>
   )
 }

@@ -1,5 +1,6 @@
-import Section from "./components/Section01/Section01"
 import Navbar from "./components/Navbar/Navbar"
+import Section from "./components/Section01/Section01"
+import Section02 from "./components/Section02/Section02"
 
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
       <>
         <Navbar />
         <Section />
+        <Section02 />
       </>
   )
 }

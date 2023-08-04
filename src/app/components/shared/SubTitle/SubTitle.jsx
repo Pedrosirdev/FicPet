@@ -1,7 +1,7 @@
-function SubTitle(){
+function SubTitle(props){
   return (
     <h4>
-      Oferecemos desde banho e tosa até o melhor tratamento veterinário e muito mais!
+      {props.subTitle}
     </h4>
   )
 }
