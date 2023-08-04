@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Average+Sans&family=Boogaloo&family=Quintessential&family=Readex+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Average+Sans&family=Boogaloo&family=Quintessential&family=Readex+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Average+Sans&family=Boogaloo&family=Quintessential&family=Readex+Pro&display=swap");
 #x-small, #small, #medium, #large, #x-large, #xx-large {
   position: fixed;
   z-index: 100;
@@ -247,6 +248,45 @@
   .div-logo img {
     width: 170px;
     height: 80px;
+  }
+}
+/*X-Large devices (large desktops, 1200px and up)*/
+/*XX-Large devices (larger desktops, 1400px and up)*/
+h1 {
+  font-family: "Boogaloo", cursive;
+  font-size: 55px;
+}
+
+/*media queries*/
+/* X-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #section03 {
+    text-align: center;
+    padding: 20% 4%;
+    border: 1px solid red;
+    color: #f0f8ff;
+    background-color: #032940;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #section03 img {
+    margin-bottom: 10px;
+  }
+  #section03 h4 {
+    font-family: "Average Sans", sans-serif;
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+}
+/*Small devices (landscape phones, 576px and up)*/
+/*Medium devices (tablets, 768px and up)*/
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  #section03 {
+    color: #f0f8ff;
+    height: 100vh;
+    background-color: #032940;
   }
 }
 /*X-Large devices (large desktops, 1200px and up)*/

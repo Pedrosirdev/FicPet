@@ -1,0 +1,57 @@
+@use "../variables";
+
+h1{
+  font-family: variables.$title-font;
+  font-size: 55px;
+}
+
+/*media queries*/
+/* X-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #section03{
+    text-align: center;
+    padding: 20% 4%;
+    border: 1px solid red;
+    // height: 100vh;
+    color: variables.$color-light;
+    background-color: variables.$secondary-color;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    img{
+      margin-bottom: 10px;
+    }
+
+    h4{
+      font-family: variables.$normal-text;
+      font-size: 25px;
+      padding-bottom: 20px;
+    }
+    // div{
+    //   display: flex;
+    //   flex-direction: column;
+    //   gap: 10px;
+    // }
+  }
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  #section03{
+    color: variables.$color-light;
+    height: 100vh;
+    background-color: variables.$secondary-color;
+  }
+}
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+}
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+}
