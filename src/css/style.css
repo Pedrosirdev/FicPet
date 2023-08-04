@@ -261,7 +261,7 @@ body {
 }
 
 #section01 {
-  height: 85vh;
+  height: 100vh;
   padding: 0 4%;
   display: flex;
   justify-content: space-around;
@@ -291,7 +291,7 @@ body {
   background-image: url(../assets/images/section2.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 85vh;
+  height: 100vh;
   padding: 0 4%;
   display: flex;
   justify-content: space-around;
@@ -355,10 +355,9 @@ body {
   }
   #section02 div:nth-child(1) {
     width: 130%;
-    overflow: hidden;
   }
   #section02 div:nth-child(1) img {
-    object-fit: contain;
+    width: 100%;
   }
 }
 /*Small devices (landscape phones, 576px and up)*/
@@ -370,14 +369,19 @@ body {
     display: none;
   }
   #section02 {
-    height: 852px;
+    height: 90vh;
     display: flex;
     flex-direction: column-reverse;
   }
   #section02 div:nth-child(2) {
-    position: absolute;
-    z-index: 2;
     width: 90%;
+  }
+  #section02 div:nth-child(1) {
+    width: 150%;
+  }
+  #section02 div:nth-child(1) img {
+    width: 100%;
+    object-fit: cover;
   }
 }
 /*Medium devices (tablets, 768px and up)*/
@@ -393,6 +397,23 @@ body {
     height: 388px;
     margin: 0 auto;
   }
+  #section02 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #section02 div:nth-child(2) {
+    margin-top: 10em;
+    align-self: flex-start;
+    width: 80%;
+  }
+  #section02 div:nth-child(1) {
+    width: 100%;
+  }
+  #section02 div:nth-child(1) img {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
@@ -404,6 +425,22 @@ body {
     height: 430px;
     margin: 0 auto;
   }
+  #section02 {
+    height: 90vh;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  #section02 div:nth-child(2) {
+    align-self: inherit;
+    width: 80%;
+  }
+  #section02 div:nth-child(1) {
+    width: 100%;
+  }
+  #section02 div:nth-child(1) img {
+    width: 100%;
+  }
 }
 /*X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
@@ -414,6 +451,21 @@ body {
     width: 529px;
     height: 508px;
     margin: 0 auto;
+  }
+  #section02 {
+    padding-top: 6%;
+  }
+  #section02 div:nth-child(2) {
+    align-self: inherit;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  #section02 div:nth-child(1) {
+    width: 100%;
+  }
+  #section02 div:nth-child(1) img {
+    width: 80%;
   }
 }
 

@@ -13,7 +13,7 @@ body{
   background-color: variables.$main-color;
 }
 #section01{
-  height: 85vh;
+  height: 100vh;
   padding: 0 4%;
   display: flex;
   justify-content: space-around;
@@ -41,11 +41,12 @@ body{
   }
 }
 #section02{
-  // border: 1px solid red;
   background-image: url(../assets/images/section2.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 85vh;
+  height: 100vh;
+  // width: 100vw;
+  // padding: 0 4% 8% 4%;
   padding: 0 4%;
   display: flex;
   justify-content: space-around;
@@ -107,6 +108,7 @@ body{
     display: flex;
     flex-direction: column-reverse;
     div:nth-child(2){
+      // margin-bottom: -2em;
       // position: absolute;
       // z-index: 2;
       width: 90%;
@@ -115,10 +117,9 @@ body{
     div:nth-child(1){
       width: 130%;
       // height: 500px;
-      overflow: hidden;
       img{
+        width: 100%;
 
-        object-fit: contain;
       }
     }
   }
@@ -134,18 +135,18 @@ body{
     }
   }
   #section02{
-    height: 852px;
+    height: 90vh;
     display: flex;
     flex-direction: column-reverse;
     div:nth-child(2){
-      position: absolute;
-      z-index: 2;
+      // margin-bottom: -5em;
       width: 90%;
-      // border: 1px solid #f00;
     }
     div:nth-child(1){
+      width: 150%;
       img{
-        // border: 1px solid #fff;
+      width: 100%;
+        object-fit: cover;
       }
     }
   }
@@ -166,6 +167,23 @@ body{
       }
     }
   }
+  #section02{
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    div:nth-child(2){
+      margin-top: 10em;
+      align-self: flex-start;
+      width: 80%;
+    }
+    div:nth-child(1){
+      width: 100%;
+      img{
+      width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
 }
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
@@ -179,6 +197,22 @@ body{
       }
     }
   }
+  #section02{
+    height: 90vh;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    div:nth-child(2){
+      align-self: inherit;
+      width: 80%;
+    }
+    div:nth-child(1){
+      width: 100%;
+      img{
+      width: 100%;
+      }
+    }
+  }
 }
 /*X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
@@ -189,6 +223,24 @@ body{
         width: 529px;
         height: 508px;
         margin: 0 auto;
+      }
+    }
+  }
+  #section02{
+    padding-top: 6%;
+    div:nth-child(2){
+      align-self: inherit;
+      width: 100%;
+      margin-bottom: 0;
+      margin-top: 0;
+      // border: 1px solid #f00;
+    }
+    div:nth-child(1){
+      width: 100%;
+      // border: 1px solid rgb(188, 179, 179);
+
+      img{
+      width: 80%;
       }
     }
   }
