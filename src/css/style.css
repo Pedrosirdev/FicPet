@@ -263,7 +263,6 @@ h1 {
   #section03 {
     text-align: center;
     padding: 20% 4%;
-    border: 1px solid red;
     color: #f0f8ff;
     background-color: #032940;
     display: flex;
@@ -280,16 +279,99 @@ h1 {
   }
 }
 /*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  #section03 {
+    text-align: center;
+    padding: 60% 4% 30% 4%;
+    color: #f0f8ff;
+    background-color: #032940;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #section03 img {
+    margin-bottom: 10px;
+  }
+  #section03 h4 {
+    font-family: "Average Sans", sans-serif;
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+}
 /*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  #section03 {
+    text-align: center;
+    padding: 50% 4% 30% 4%;
+    color: #f0f8ff;
+    background-color: #032940;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  #section03 img {
+    margin-bottom: 10px;
+  }
+  #section03 h1 {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  #section03 h4 {
+    font-family: "Average Sans", sans-serif;
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+  #section03 div:nth-child(2),
+  #section03 div:nth-child(3) {
+    margin: 0 auto;
+  }
+  #section03 div:nth-child(4) {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
   #section03 {
-    color: #f0f8ff;
-    height: 100vh;
-    background-color: #032940;
+    padding: 10% 4%;
   }
 }
 /*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  #section03 {
+    text-align: center;
+    padding: 10% 4%;
+    color: #f0f8ff;
+    background-color: #032940;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  #section03 img {
+    margin-bottom: 10px;
+  }
+  #section03 h1 {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  #section03 h4 {
+    font-family: "Average Sans", sans-serif;
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+  #section03 div:nth-child(2),
+  #section03 div:nth-child(3) {
+    margin: auto auto;
+  }
+  #section03 div:nth-child(4) {
+    width: auto;
+    margin: auto auto;
+  }
+}
 /*XX-Large devices (larger desktops, 1400px and up)*/
 * {
   padding: 0;

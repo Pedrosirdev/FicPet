@@ -6,7 +6,6 @@ function ContServices(props){
     <div>
       <SubTitle subTitle={props.subTitle}/>
       <ImgDogs src={props.src} alt={props.alt}/>
-      
     </div>
   )
 }

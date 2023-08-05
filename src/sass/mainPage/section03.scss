@@ -11,8 +11,6 @@ h1{
   #section03{
     text-align: center;
     padding: 20% 4%;
-    border: 1px solid red;
-    // height: 100vh;
     color: variables.$color-light;
     background-color: variables.$secondary-color;
     display: flex;
@@ -28,29 +26,105 @@ h1{
       font-size: 25px;
       padding-bottom: 20px;
     }
-    // div{
-    //   display: flex;
-    //   flex-direction: column;
-    //   gap: 10px;
-    // }
   }
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+  #section03{
+    text-align: center;
+    padding: 60% 4% 30% 4%;
+    color: variables.$color-light;
+    background-color: variables.$secondary-color;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    img{
+      margin-bottom: 10px;
+    }
+
+    h4{
+      font-family: variables.$normal-text;
+      font-size: 25px;
+      padding-bottom: 20px;
+    }
+  }
 }
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+  #section03{
+    text-align: center;
+    padding: 50% 4% 30% 4%;
+    color: variables.$color-light;
+    background-color: variables.$secondary-color;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    img{
+      margin-bottom: 10px;
+    }
+    h1{
+      margin: 0 auto;
+      padding-bottom: 20px;
+      width: 100%;
+    }
+    h4{
+      font-family: variables.$normal-text;
+      font-size: 25px;
+      padding-bottom: 20px;
+    }
+    div:nth-child(2),
+    div:nth-child(3){
+      margin: 0 auto;
+    }
+    div:nth-child(4){
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
 }
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
   #section03{
-    color: variables.$color-light;
-    height: 100vh;
-    background-color: variables.$secondary-color;
+    padding: 10% 4%;
   }
 }
 /*X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+  #section03{
+    text-align: center;
+    padding: 10% 4%;
+    color: variables.$color-light;
+    background-color: variables.$secondary-color;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    img{
+      margin-bottom: 10px;
+    }
+    h1{
+      margin: 0 auto;
+      padding-bottom: 20px;
+      width: 100%;
+    }
+    h4{
+      font-family: variables.$normal-text;
+      font-size: 25px;
+      padding-bottom: 20px;
+    }
+    div:nth-child(2),
+    div:nth-child(3){
+      margin: auto auto;
+    }
+    div:nth-child(4){
+      width: auto;
+      margin: auto auto;
+    }
+  }
 }
 /*XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) {
