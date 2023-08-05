@@ -1,17 +1,15 @@
 @use "variables";
 
-.off-canvas-active{
-  top: 100% !important;
-  right: -100% !important;
-  transition: all 500ms;
+
+.overflow-hidden{
+  overflow: hidden !important;
 }
 
 #navbar{
-  margin-right: -10px;
   display: flex;
   justify-content: space-between;
   background-color: variables.$secondary-color;
-  padding: 1em 4% ;
+  padding: 1em 4%;
   color: #f0f8ff;
   a{
     color: #f0f8ff;
@@ -66,17 +64,21 @@
             /*media queries*/
 /* X-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .off-canvas-active{
+    left: 32% !important;
+  }
   #navbar{
     height: 4em;
-    position: relative;
+    // position: relative;
     a:hover{
       translate: -1em;
     }
   }
   .div-links-navbar{
-    position: absolute;
-    top: 100%;
-    right: -0%;
+    position: fixed;
+    left: 100%;
+    top: 4em;
+    padding-top: 10px;
     transition: all 500ms;
     padding-right: 2em;
     width: 60% !important;
@@ -99,10 +101,15 @@
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+  .off-canvas-active{
+    left: 48% !important;
+  }
   .div-links-navbar{
-    position: absolute;
-    top: 100%;
-    right: 0%;
+    width: 42% !important;
+    position: fixed;
+    left: 100%;
+    top: 4em;
+    padding-top: 20px;
     height: 100vh;
     background-color: variables.$secondary-color;
     padding-right: 4em;
@@ -118,7 +125,6 @@
 
     #navbar{
       height: 4em;
-      position: relative;
       a:hover{
         translate: -1em;
       }
@@ -133,6 +139,9 @@
 }
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+  .off-canvas-active{
+    left: 50% !important;
+  }
   #navbar{
     height: 4em;
     a:hover{
@@ -166,6 +175,7 @@
     }
   }
   .div-links-navbar{
+    padding-top: 0px;
     height: inherit;
     position: inherit !important;
     top: inherit !important;

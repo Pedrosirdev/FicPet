@@ -10,13 +10,14 @@
   padding: 0;
   margin: 0;
 }
-body{
-  background-color: variables.$main-color;
-}
+// body{
+//   background-color: variables.$main-color;
+// }
 #section01{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: variables.$main-color;
 
   div:nth-child(1){
     color: variables.$color-light;
@@ -38,7 +39,6 @@ body{
   // }
 }
 #section02{
-  border: 1px solid red;
   background-image: url(../assets/images/section2.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -103,10 +103,11 @@ body{
       width: 90%;
     }
     div:nth-child(1){
-      border: 1px solid green;
       max-width: 100%;
+      overflow: hidden;
       img{
-        width: 100%;
+        width: 130%;
+        max-height: 100%;
       }
     }
   }
@@ -133,7 +134,7 @@ body{
       width: 90%;
     }
     div:nth-child(1){
-      width: 150%;
+      width: 100%;
       img{
       width: 100%;
       }
@@ -194,7 +195,8 @@ body{
     }
   }
   #section02{
-    height: 90vh;
+    padding-bottom: 5%;
+    height: auto;
     gap: 10px;
     display: flex;
     flex-direction: row;
@@ -205,7 +207,7 @@ body{
     div:nth-child(1){
       width: 100%;
       img{
-      width: 100%;
+      width: 90%;
       }
     }
   }
