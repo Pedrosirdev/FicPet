@@ -1,0 +1,136 @@
+@use "../variables";
+
+#section04{
+  background-color: variables.$secondary-color;
+  color: variables.$color-light;
+  display: flex;
+  padding-top: 10%;
+
+  .div-donation-icon{
+    font-family: variables.$normal-text;
+    display: flex;
+    gap: 5px;
+    align-items: baseline;
+    padding-bottom: 5%;
+
+    h4{
+      font-size: 25px;
+    }
+
+    i{
+      color: variables.$tertiary-color;
+    }
+  }
+}
+
+/*media queries*/
+/* X-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #section04{
+    flex-direction: column-reverse;
+
+    div:nth-child(3){
+      padding: 10px;
+      text-align: center;
+      padding-bottom: 10%;
+    }
+
+    .div-donation-icon{
+      justify-content: center;
+    }
+    .defaultBtn{
+      margin: 0 auto;
+      font-family: variables.$normal-text;
+    }
+    img{
+      width: 100%;
+    }
+    img:nth-child(2){
+      display: none;
+    }
+  }
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  #section04{
+    flex-direction: column-reverse;
+
+    div:nth-child(3){
+      padding: 10px;
+      text-align: center;
+      padding-bottom: 10%;
+    }
+
+    .div-donation-icon{
+      justify-content: center;
+    }
+    .defaultBtn{
+      margin: 0 auto;
+      font-family: variables.$normal-text;
+    }
+    img{
+      width: 100%;
+      display: none;
+    }
+    img:nth-child(2){
+      display: inherit;
+    }
+  }
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  #section04{
+    flex-direction: row;
+    .defaultBtn{
+      margin: 0 auto;
+      font-family: variables.$normal-text;
+    }
+    img{
+      width: 50%;
+      display: inherit;
+    }
+    img:nth-child(2){
+      display: none;
+    }
+  }
+}
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  #section04{
+    flex-direction: row;
+
+    div:nth-child(3){
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      width: 50%;
+      padding: 10px;
+      text-align: center;
+      padding-bottom: 10%;
+    }
+
+    .div-donation-icon{
+      justify-content: center;
+    }
+    .defaultBtn{
+      margin: 0 auto;
+      font-family: variables.$normal-text;
+    }
+    img{
+      width: 50%;
+      display: inherit;
+    }
+    img:nth-child(2){
+      display: none;
+    }
+  }
+}
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+  #section04{
+    padding-bottom: 4em;
+  }
+}

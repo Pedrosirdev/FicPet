@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Average+Sans&family=Boogaloo&family=Quintessential&family=Readex+Pro&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Average+Sans&family=Boogaloo&family=Quintessential&family=Readex+Pro&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Average+Sans&family=Boogaloo&family=Quintessential&family=Readex+Pro&display=swap");
 #x-small, #small, #medium, #large, #x-large, #xx-large {
   position: fixed;
   z-index: 100;
@@ -373,13 +371,164 @@ h1 {
   }
   #section03 div:nth-child(2),
   #section03 div:nth-child(3) {
-    margin: auto auto;
+    margin: auto 12;
   }
   #section03 div:nth-child(4) {
     width: auto;
-    margin: auto auto;
+    margin: auto 12;
   }
 }
+/*XX-Large devices (larger desktops, 1400px and up)*/
+#section04 {
+  background-color: #032940;
+  color: #f0f8ff;
+  display: flex;
+  padding-top: 10%;
+}
+#section04 .div-donation-icon {
+  font-family: "Average Sans", sans-serif;
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
+  padding-bottom: 5%;
+}
+#section04 .div-donation-icon h4 {
+  font-size: 25px;
+}
+#section04 .div-donation-icon i {
+  color: #BF6C06;
+}
+
+/*media queries*/
+/* X-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #section04 {
+    flex-direction: column-reverse;
+  }
+  #section04 div:nth-child(3) {
+    padding: 10px;
+    text-align: center;
+    padding-bottom: 10%;
+  }
+  #section04 .div-donation-icon {
+    justify-content: center;
+  }
+  #section04 .defaultBtn {
+    margin: 0 auto;
+    font-family: "Average Sans", sans-serif;
+  }
+  #section04 img {
+    width: 100%;
+  }
+  #section04 img:nth-child(2) {
+    display: none;
+  }
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  #section04 {
+    flex-direction: column-reverse;
+  }
+  #section04 div:nth-child(3) {
+    padding: 10px;
+    text-align: center;
+    padding-bottom: 10%;
+  }
+  #section04 .div-donation-icon {
+    justify-content: center;
+  }
+  #section04 .defaultBtn {
+    margin: 0 auto;
+    font-family: "Average Sans", sans-serif;
+  }
+  #section04 img {
+    width: 100%;
+    display: none;
+  }
+  #section04 img:nth-child(2) {
+    display: inherit;
+  }
+}
+/*Medium devices (tablets, 768px and up)*/
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  #section04 {
+    flex-direction: row;
+  }
+  #section04 .defaultBtn {
+    margin: 0 auto;
+    font-family: "Average Sans", sans-serif;
+  }
+  #section04 img {
+    width: 50%;
+    display: inherit;
+  }
+  #section04 img:nth-child(2) {
+    display: none;
+  }
+}
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  #section04 {
+    flex-direction: row;
+  }
+  #section04 div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    padding-bottom: 10%;
+  }
+  #section04 .div-donation-icon {
+    justify-content: center;
+  }
+  #section04 .defaultBtn {
+    margin: 0 auto;
+    font-family: "Average Sans", sans-serif;
+  }
+  #section04 img {
+    width: 50%;
+    display: inherit;
+  }
+  #section04 img:nth-child(2) {
+    display: none;
+  }
+}
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+  #section04 {
+    padding-bottom: 4em;
+  }
+}
+#footer {
+  display: flex;
+  background-color: #F2A20C;
+  color: #f0f8ff;
+}
+
+/*media queries*/
+/* X-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #footer {
+    flex-direction: column;
+    gap: 10px;
+    padding: 5% 2%;
+    flex-wrap: wrap;
+  }
+  #footer div {
+    border: 1px solid red;
+  }
+  #footer .useful-links {
+    display: block;
+    text-decoration: none;
+  }
+}
+/*Small devices (landscape phones, 576px and up)*/
+/*Medium devices (tablets, 768px and up)*/
+/*Large devices (desktops, 992px and up)*/
+/*X-Large devices (large desktops, 1200px and up)*/
 /*XX-Large devices (larger desktops, 1400px and up)*/
 * {
   padding: 0;

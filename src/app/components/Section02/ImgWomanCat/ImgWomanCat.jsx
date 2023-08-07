@@ -1,4 +1,4 @@
-import WomanWithCat from '../../../../assets/images/WomanWithCat.png'
+import WomanWithCat from '../../../../assets/images/woman-with-cat.png'
 
 function ImgWomanCat(){
   return (

@@ -1,4 +1,4 @@
-import LogoImage from '../../../../assets/images/Logo_FicPet.png'
+import LogoImage from '../../../../assets/images/logo-ficPet.png'
 
 export default function Logo(){
   return (

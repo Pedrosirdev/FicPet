@@ -1,9 +1,9 @@
 import Title from "../shared/Title/Title";
 import ContServices from "./ContServices/ContServices";
 
-import DogBath from "../../../assets/images/DogBath.png"
-import DogTrainer from "../../../assets/images/dogTrainer.png";
-import DogVeterinarian from "../../../assets/images/dogVeterinarian.png";
+import DogBath from "../../../assets/images/dog-bath.png"
+import DogTrainer from "../../../assets/images/dog-trainer.png";
+import DogVeterinarian from "../../../assets/images/dog-veterinarian.png";
 
 function Section03(){
   return (
