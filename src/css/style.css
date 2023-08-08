@@ -497,15 +497,19 @@ h1 {
   }
 }
 /*XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) {
-  #section04 {
-    padding-bottom: 4em;
-  }
-}
 #footer {
   display: flex;
   background-color: #F2A20C;
   color: #f0f8ff;
+}
+#footer h1 {
+  font-size: 40px;
+  margin-bottom: 0.2em;
+}
+#footer .useful-links {
+  color: #f0f8ff;
+  font-family: "Average Sans", sans-serif;
+  text-decoration: none;
 }
 
 /*media queries*/
@@ -514,20 +518,88 @@ h1 {
   #footer {
     flex-direction: column;
     gap: 10px;
-    padding: 5% 2%;
+    padding: 5% 4% 10% 4%;
     flex-wrap: wrap;
   }
-  #footer div {
-    border: 1px solid red;
+  #footer div:nth-child(4) {
+    display: flex;
+    flex-direction: column;
   }
   #footer .useful-links {
+    margin-bottom: 1em;
     display: block;
-    text-decoration: none;
+  }
+  #footer img {
+    align-self: flex-end;
+  }
+  #footer .icons-footer {
+    padding: 2%;
+    font-size: 2em;
+    display: flex;
+    column-gap: 40px;
   }
 }
 /*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  #footer {
+    flex-direction: column;
+    gap: 10px;
+    padding: 5% 4% 10% 4%;
+    flex-wrap: wrap;
+  }
+  #footer div:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+  }
+  #footer .useful-links {
+    margin-bottom: 1em;
+    display: block;
+  }
+  #footer img {
+    align-self: flex-end;
+  }
+  #footer .icons-footer {
+    padding: 2%;
+    font-size: 2em;
+    display: flex;
+    column-gap: 40px;
+  }
+}
 /*Medium devices (tablets, 768px and up)*/
 /*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  #footer {
+    flex-direction: row;
+    gap: 10px;
+    padding: 5% 4% 10% 4%;
+    flex-wrap: nowrap;
+  }
+  #footer div {
+    width: 25%;
+  }
+  #footer div:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  #footer .useful-links {
+    margin-bottom: 1em;
+    display: block;
+  }
+  #footer img {
+    align-self: flex-end;
+    width: 132px;
+    height: 118px;
+  }
+  #footer .icons-footer {
+    width: auto;
+    padding: 2%;
+    font-size: 2em;
+    display: flex;
+    column-gap: 40px;
+  }
+}
 /*X-Large devices (large desktops, 1200px and up)*/
 /*XX-Large devices (larger desktops, 1400px and up)*/
 * {
@@ -596,6 +668,21 @@ h1 {
 .defaultBtn:hover {
   transform: scale(1.05);
   cursor: pointer;
+}
+
+.thanks {
+  font-family: "Average Sans", sans-serif;
+  color: #f0f8ff;
+  text-align: center;
+  background-color: #F2A20C;
+  font-size: 1em;
+  padding: 1% 1% 4% 1%;
+}
+.thanks a {
+  color: #f0f8ff;
+}
+.thanks i {
+  color: #f00;
 }
 
 /* X-small devices (portrait phones, less than 576px) */

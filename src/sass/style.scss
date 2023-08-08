@@ -83,6 +83,20 @@
   transform: scale(1.05);
   cursor: pointer;
 }
+.thanks{
+  font-family: variables.$normal-text;
+  color: variables.$color-light;
+  text-align: center;
+  background-color: variables.$main-color;
+  font-size: 1em;
+  padding: 1% 1% 4% 1%;
+  a{
+    color: variables.$color-light;
+  }
+  i{
+    color: #f00;
+  }
+}
 
 /* X-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {

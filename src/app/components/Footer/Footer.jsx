@@ -1,11 +1,13 @@
 import IconBoostrap from "../shared/IconsBootstrap/IconsBootstrap";
 import ImgComponent from "../shared/ImgComponent/ImgComponent";
-import SubTitle from "../shared/SubTitle/SubTitle";
 import Title from "../shared/Title/Title";
 import UsefulLinks from "../shared/UsefulLinks/UsefulLinks";
+import LogoFooter from "../../../assets/images/logo-footer.png";
+import Thanks from "../shared/Thanks/Thanks";
 
 function Footer(){
   return(
+    <>
     <footer id="footer">
     <div>
       <Title title="Endereço" />
@@ -27,14 +29,16 @@ function Footer(){
       <UsefulLinks class="useful-links" text="Créditos de imagens" />
     </div>
     <div>
-      <ImgComponent alt="imagem" />
-      <div>
-        <IconBoostrap class="bi bi-alarm" />
-        <IconBoostrap class="bi bi-alarm" />
-        <IconBoostrap class="bi bi-alarm" />
+      <ImgComponent src={LogoFooter} alt="Logo FicPet" />
+      <div className="icons-footer">
+        <IconBoostrap class="bi bi-tiktok" />
+        <IconBoostrap class="bi bi-instagram" />
+        <IconBoostrap class="bi bi-whatsapp" />
       </div>
     </div>
     </footer>
+    <Thanks />
+    </>
   )
 }
 
