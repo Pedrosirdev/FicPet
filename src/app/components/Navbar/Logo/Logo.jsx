@@ -1,11 +1,12 @@
 import LogoImage from '../../../../assets/images/logo-ficPet.png'
+import { Link } from 'react-router-dom'
 
 export default function Logo(){
   return (
     <div className="div-logo">
-      <a href="">
+      <Link to="/">
       <img src={LogoImage} alt="FicPet" />
-      </a>
+      </Link>
     </div>
   )
 }

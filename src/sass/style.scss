@@ -97,6 +97,24 @@
     color: #f00;
   }
 }
+#sobre{
+  background-color: variables.$secondary-color;
+  color: variables.$color-light;
+  text-align: center;
+  height: 70vh;
+  padding: 1% 4%;
+  h1{
+    margin-bottom: 1em;
+  }
+  h4{
+    margin: 0 auto;
+    padding-bottom: 10em;
+    text-align: center;
+    font-family: variables.$normal-text;
+    width: 70%;
+    margin-bottom: 10em;
+  }
+}
 
 /* X-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {

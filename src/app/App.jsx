@@ -1,3 +1,4 @@
+import AppRoutes from "../Routes"
 import Footer from "./components/Footer/Footer"
 import Navbar from "./components/Navbar/Navbar"
 import Section from "./components/Section01/Section01"
@@ -9,7 +10,7 @@ import Home from "./pages/Home/Home"
 function App() {
   return (
       <>
-        <Home />
+        <AppRoutes />
       </>
   )
 }
