@@ -20,7 +20,7 @@ function Footer(){
       <UsefulLinks class="useful-links" text="Tratamento veterinário" />
       <UsefulLinks class="useful-links" text="Adestramento" />
       <UsefulLinks class="useful-links" text="Adoção" />
-      <UsefulLinks class="useful-links" text="Como doar?" />
+      <UsefulLinks class="useful-links" text="Doar para abrigos" />
     </div>
     <div>
       <Title title="Links úteis" />
