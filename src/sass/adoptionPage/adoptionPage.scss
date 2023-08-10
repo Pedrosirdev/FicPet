@@ -1,5 +1,10 @@
 @use "../variables";
 
+#adoptionPage{
+  background-color: variables.$secondary-color;
+  color: variables.$color-light;
+}
+
 /*media queries*/
 /* X-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {

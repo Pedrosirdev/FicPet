@@ -6,6 +6,7 @@
   display: flex;
   padding-top: 10%;
 
+
   .div-donation-icon{
     font-family: variables.$normal-text;
     display: flex;
@@ -28,6 +29,7 @@
 @media (max-width: 575.98px) {
   #section04{
     flex-direction: column-reverse;
+    margin-bottom: -1em;
 
     div:nth-child(3){
       padding: 10px;
@@ -42,10 +44,10 @@
       margin: 0 auto;
       font-family: variables.$normal-text;
     }
-    img{
+    a img {
       width: 100%;
     }
-    img:nth-child(2){
+    a:nth-child(2){
       display: none;
     }
   }
@@ -68,12 +70,12 @@
       margin: 0 auto;
       font-family: variables.$normal-text;
     }
-    img{
-      width: 100%;
+    a:nth-child(1){
       display: none;
     }
-    img:nth-child(2){
+    a img{
       display: inherit;
+      width: 100%;
     }
   }
 }
@@ -88,11 +90,14 @@
       margin: 0 auto;
       font-family: variables.$normal-text;
     }
-    img{
+    a img{
+      width: 100%;
+    }
+    a:nth-child(1){
       width: 50%;
       display: inherit;
     }
-    img:nth-child(2){
+    a:nth-child(2){
       display: none;
     }
   }
@@ -119,11 +124,15 @@
       margin: 0 auto;
       font-family: variables.$normal-text;
     }
-    img{
+
+    a img{
+      width: 100%;
+    }
+    a:nth-child(1){
       width: 50%;
       display: inherit;
     }
-    img:nth-child(2){
+    a:nth-child(2){
       display: none;
     }
   }

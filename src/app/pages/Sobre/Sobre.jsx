@@ -9,9 +9,9 @@ function Sobre(){
     <Navbar />
     <section id="sobre">
       <Title title="Sobre nós"/>
-      <SubTitle subTitle="Quisque eu massa at eros facilisis tincidunt eget at dui. Sed  augue risus, vestibulum ut tristique quis, dictum
-sit amet leo. Donec porttitor euismod ex sit amet maximus. Ut ac tristique dui. Vivamus gravida iaculis ips
-um nec ullamcorper. Aenean eget dui id elit efficitur elementum. Vestibulum ante ipsum primis infaucibusorciluctus et ultricesposuere cubilia curae; Nullam tempus nunc ut justo porta, non rhoncus metus cursus.Suspendisse potenti."/>
+      <SubTitle subTitle="Este é um site fictício de um petshop, desenvolvido por mim, Pedro Henrique Sirqueira, desenvolvedor front-end. Sou responsável desde o design inicial até a publicação do site.
+
+O propósito deste site é demonstrar minhas habilidades em programação. Todas as receitas apresentadas são fictícias e as imagens utilizadas são apenas ilustrativas."/>
     </section>
     <Footer />
     </>

@@ -1,6 +1,10 @@
+import { Link } from 'react-router-dom'
+
 function ImgDogs(props){
   return (
-    <img src={props.src} alt={props.alt} />
+      <Link>
+    <img height={props.height} width={props.width} src={props.src} alt={props.alt} />
+      </Link>
   )
 }
 

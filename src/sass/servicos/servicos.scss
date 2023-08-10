@@ -1,0 +1,83 @@
+@use "../variables";
+
+#servicos{
+  background: variables.$secondary-color;
+  color: variables.$color-light;
+  padding: 5% 4%;
+
+  h1{
+    padding-bottom: 5%;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+  }
+  img{
+    transition: all 300ms;
+  }
+  a img:hover{
+    transform: scale(1.05);
+    overflow: hidden;
+  }
+
+  h4{
+    font-family: variables.$normal-text;
+    padding: 20px;
+  }
+
+  .services-imgs{
+    gap: 20px;
+    text-align: center;
+  }
+}
+
+/*media queries*/
+/* X-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #servicos{
+    
+    h1{
+      font-size: 44px;
+    }
+    h4{
+      font-size: 1.3em;
+    }
+
+    .services-imgs{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  #servicos{
+
+    h4{
+      font-size: 1.3em;
+    }
+
+    .services-imgs{
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      div{
+        margin: 0 auto;
+      }
+    }
+  }
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+}
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+}
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+}

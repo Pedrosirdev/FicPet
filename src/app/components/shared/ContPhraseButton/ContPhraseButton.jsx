@@ -7,7 +7,7 @@ export default function ContPhraseButton(props){
     <div>
       <Title title={props.title} />
       <SubTitle subTitle={props.subTitle} />
-      <DefaultButton btn={props.btn} />
+      <DefaultButton to={props.to} btn={props.btn} />
     </div>
   )
 }

@@ -9,7 +9,7 @@ export default function Section02(){
           <ContPhraseButton
           title={"Também trabalhamos com adoções!"}
           subTitle={"Adotar um pet é abrir as portas do coração para um amor incondicional que transforma vidas."}
-          btn={"Ver pets disponiveis"}
+          btn={"Ver pets disponiveis"} to="/AdoptionPage"
           />
         </section>
   )

@@ -5,7 +5,7 @@ function ContServices(props){
   return (
     <div>
       <SubTitle subTitle={props.subTitle}/>
-      <ImgDogs src={props.src} alt={props.alt}/>
+      <ImgDogs height={props.height} width={props.width} src={props.src} alt={props.alt}/>
     </div>
   )
 }

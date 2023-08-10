@@ -1,6 +1,6 @@
 function UsefulLinks(props) {
   return(
-    <a class={props.class} href="">{props.text}</a>
+    <a className={props.class} href="">{props.text}</a>
   )
 }
 
