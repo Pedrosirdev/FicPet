@@ -674,6 +674,42 @@ h1 {
   background-color: #032940;
   color: #f0f8ff;
 }
+#adoptionPage a {
+  display: block;
+}
+#adoptionPage h1 {
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+  margin-bottom: 5%;
+  border: 1px solid red;
+}
+#adoptionPage .card {
+  overflow: hidden;
+  border-radius: 30px;
+  border: 1px solid red;
+  position: relative;
+  transform: translateZ(0);
+  width: 236px;
+  height: 416px;
+}
+#adoptionPage .card .img-card {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 300ms;
+}
+#adoptionPage .card .img-card:hover {
+  transform: rotate(-10deg) scale(1.3);
+}
+#adoptionPage .card .card-footer {
+  position: absolute;
+  padding: 0 1.5rem;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  backdrop-filter: blur(10px);
+}
 
 /*media queries*/
 /* X-small devices (portrait phones, less than 576px) */
