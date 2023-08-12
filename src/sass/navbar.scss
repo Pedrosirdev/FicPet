@@ -75,6 +75,7 @@
     }
   }
   .div-links-navbar{
+    z-index: 2;
     position: fixed;
     left: 100%;
     top: 4em;
@@ -105,6 +106,7 @@
     left: 48% !important;
   }
   .div-links-navbar{
+    z-index: 2;
     width: 42% !important;
     position: fixed;
     left: 100%;

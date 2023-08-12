@@ -136,6 +136,7 @@
     translate: -1em;
   }
   .div-links-navbar {
+    z-index: 2;
     position: fixed;
     left: 100%;
     top: 4em;
@@ -164,6 +165,7 @@
     left: 48% !important;
   }
   .div-links-navbar {
+    z-index: 2;
     width: 42% !important;
     position: fixed;
     left: 100%;
@@ -673,22 +675,22 @@ h1 {
 #adoptionPage {
   background-color: #032940;
   color: #f0f8ff;
+  padding: 4%;
 }
 #adoptionPage a {
   display: block;
+  color: #032940;
 }
 #adoptionPage h1 {
   text-align: center;
   margin: 0 auto;
-  width: 50%;
-  margin-bottom: 5%;
-  border: 1px solid red;
 }
 #adoptionPage .card {
+  border: 2px solid #fff;
   overflow: hidden;
   border-radius: 30px;
-  border: 1px solid red;
   position: relative;
+  z-index: 0;
   transform: translateZ(0);
   width: 236px;
   height: 416px;
@@ -703,19 +705,91 @@ h1 {
   transform: rotate(-10deg) scale(1.3);
 }
 #adoptionPage .card .card-footer {
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  padding: 0 1.5rem;
+  padding: 0 1.1rem;
   bottom: 0;
   left: 0;
   width: 100%;
+  height: 35%;
   backdrop-filter: blur(10px);
+}
+#adoptionPage .card .card-footer span:nth-child(1) {
+  font-family: "Boogaloo", cursive;
+  font-size: 35px;
+}
+#adoptionPage .card .card-footer span:nth-child(2),
+#adoptionPage .card .card-footer span:nth-child(3) {
+  font-family: "Average Sans", sans-serif;
+  font-size: 19px;
+  width: 90%;
 }
 
 /*media queries*/
 /* X-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #adoptionPage h1 {
+    font-size: 36px;
+    width: 90%;
+    margin-bottom: 10%;
+  }
+  #adoptionPage .cont-adoption-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
 /*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  #adoptionPage h1 {
+    font-size: 36px;
+    width: 90%;
+    margin-bottom: 10%;
+  }
+  #adoptionPage .cont-adoption-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
 /*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  #adoptionPage h1 {
+    font-size: 36px;
+    width: 90%;
+    margin-bottom: 10%;
+  }
+  #adoptionPage .cont-adoption-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+  }
+}
 /*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  #adoptionPage h1:nth-child(1) {
+    font-size: 55px;
+  }
+  #adoptionPage h1 {
+    font-size: 36px;
+    width: 90%;
+    margin-bottom: 10%;
+  }
+  #adoptionPage .cont-adoption-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+  }
+}
 /*X-Large devices (large desktops, 1200px and up)*/
 /*XX-Large devices (larger desktops, 1400px and up)*/
 * {
