@@ -1,0 +1,100 @@
+@use "../variables";
+
+.container-contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2%;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: #f00;
+  color: variables.$color-light;
+
+  h1, .bi-x-circle{
+    transition: all 300ms;
+    font-size: 36px;
+  }
+  .bi-telephone-fill,
+  .bi-whatsapp {
+    transition: all 300ms;
+  }
+  i:hover{
+    color: #f00;
+    cursor: pointer;
+  }
+
+  .container-text-contact{
+    padding: 2%;
+    background-color: variables.$secondary-color;
+    border-radius: 30px;
+    border: 5px solid variables.$color-light;
+
+    form{
+      border: 1px solid red;
+    }
+  }
+}
+
+/*media queries*/
+/* X-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .container-contact{
+    text-align: center;
+    h1, .bi-x-circle{
+      transition: all 300ms;
+      font-size: 36px;
+    }
+    .bi-telephone-fill,
+    .bi-whatsapp {
+      transition: all 300ms;
+      font-size: 22px;
+    }
+    i:hover{
+      color: #f00;
+      cursor: pointer;
+    }
+  
+    .container-text-contact{
+      // margin: 0 auto;
+      width: 80%;
+      height: 746px;
+      padding: 2%;
+      background-color: variables.$secondary-color;
+      border-radius: 30px;
+      border: 5px solid variables.$color-light;
+  
+      form{
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .trace{
+      display: none;
+    }
+
+    span{
+      border: 1px solid red;
+      font-family: variables.$normal-text;
+      font-size: 22px;
+    }
+  }
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+}
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+}
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+}

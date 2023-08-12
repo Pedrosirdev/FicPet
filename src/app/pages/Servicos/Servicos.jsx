@@ -7,11 +7,13 @@ import DogVeterinarian from "../../../assets/images/dog-veterinarian.png";
 import DogTrainer from "../../../assets/images/dog-trainer.png";
 import WomanWithCat from "../../../assets/images/woman-with-cat.png";
 import DogDonation from "../../../assets/images/dog-donation-services.png";
+import ContactComponent from "../../components/shared/ContactComponent/ContactComponent";
 
 function Servicos(){
   return (
     <>
       <Navbar />
+          <ContactComponent />
         <section id="servicos">
           <Title title="Nossos serviços" />
           <div className="services-imgs">

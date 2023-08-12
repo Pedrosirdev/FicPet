@@ -792,6 +792,86 @@ h1 {
 }
 /*X-Large devices (large desktops, 1200px and up)*/
 /*XX-Large devices (larger desktops, 1400px and up)*/
+.container-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2%;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: #f00;
+  color: #f0f8ff;
+}
+.container-contact h1, .container-contact .bi-x-circle {
+  transition: all 300ms;
+  font-size: 36px;
+}
+.container-contact .bi-telephone-fill,
+.container-contact .bi-whatsapp {
+  transition: all 300ms;
+}
+.container-contact i:hover {
+  color: #f00;
+  cursor: pointer;
+}
+.container-contact .container-text-contact {
+  padding: 2%;
+  background-color: #032940;
+  border-radius: 30px;
+  border: 5px solid #f0f8ff;
+}
+.container-contact .container-text-contact form {
+  border: 1px solid red;
+}
+
+/*media queries*/
+/* X-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .container-contact {
+    text-align: center;
+  }
+  .container-contact h1, .container-contact .bi-x-circle {
+    transition: all 300ms;
+    font-size: 36px;
+  }
+  .container-contact .bi-telephone-fill,
+  .container-contact .bi-whatsapp {
+    transition: all 300ms;
+    font-size: 22px;
+  }
+  .container-contact i:hover {
+    color: #f00;
+    cursor: pointer;
+  }
+  .container-contact .container-text-contact {
+    width: 80%;
+    height: 746px;
+    padding: 2%;
+    background-color: #032940;
+    border-radius: 30px;
+    border: 5px solid #f0f8ff;
+  }
+  .container-contact .container-text-contact form {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+  }
+  .container-contact .trace {
+    display: none;
+  }
+  .container-contact span {
+    border: 1px solid red;
+    font-family: "Average Sans", sans-serif;
+    font-size: 22px;
+  }
+}
+/*Small devices (landscape phones, 576px and up)*/
+/*Medium devices (tablets, 768px and up)*/
+/*Large devices (desktops, 992px and up)*/
+/*X-Large devices (large desktops, 1200px and up)*/
+/*XX-Large devices (larger desktops, 1400px and up)*/
 * {
   padding: 0;
   margin: 0;
